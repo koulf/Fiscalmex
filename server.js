@@ -8,8 +8,8 @@ const path = require('path');
 const app_folder = 'dist/Fiscalmex';
 const PORT = 443;
 const app = express();
-const privatekey = fs.readFileSync('./opt/security/f.key');
-const certkey = fs.readFileSync('./opt/security/f.cer');
+const privatekey = fs.readFileSync('/opt/security/f.key');
+const certkey = fs.readFileSync('/opt/security/f.cer');
 
 
 
