@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/website #where to store the artifacts
+hooks:
+  ApplicationStart:
+    - location: /start.sh #start script for the website
+      timeout: 60
+      runas: ubuntu
+  ApplicationStop:
+    - location: /stop.sh
+      timeout: 60
+      runas: ubuntu
